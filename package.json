@@ -1,0 +1,21 @@
+{
+  "name": "website-jgstechnical",
+  "version": "1.0.0",
+  "description": "This is a test.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-vue": "^2.0.0-rc.11",
+    "holderjs": "^2.9.4",
+    "markdown-it-imsize": "^2.0.1",
+    "vuepress": "^0.14.3"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
