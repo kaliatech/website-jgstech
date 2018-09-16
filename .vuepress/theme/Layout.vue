@@ -10,12 +10,12 @@ import Vue from 'vue'
 import Navbar from './Navbar.vue'
 import LayoutHome from './LayoutHome'
 import LayoutProject from './LayoutProject'
-
-import 'vue-awesome/icons/brands/github'
-import 'vue-awesome/icons/globe'
-import 'vue-awesome/icons/brands/linkedin'
-import 'vue-awesome/icons/brands/twitter'
-import 'vue-awesome/icons/brands/stack-overflow'
+// https://github.com/vuejs/vuepress/issues/443
+import '../../node_modules/vue-awesome/icons/brands/github'
+import '../../node_modules/vue-awesome/icons/globe'
+import '../../node_modules/vue-awesome/icons/brands/linkedin'
+import '../../node_modules/vue-awesome/icons/brands/twitter'
+import '../../node_modules/vue-awesome/icons/brands/stack-overflow'
 
 export default {
   components: { Navbar, LayoutHome, LayoutProject},

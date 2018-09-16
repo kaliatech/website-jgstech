@@ -1,6 +1,7 @@
 import BootstrapVue from 'bootstrap-vue'
 
-import Icon from 'vue-awesome/components/Icon';
+//https://github.com/vuejs/vuepress/issues/443
+import Icon from '../../node_modules/vue-awesome/components/Icon'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app
