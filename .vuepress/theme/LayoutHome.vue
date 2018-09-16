@@ -1,17 +1,21 @@
 <template>
 <main>
   <b-jumbotron header="jgs-technical" lead="Practical application of technology and innovation." text-variant="light" fluid class="bg">
-    <p>JGS Technical LLC is a small consultancy owned by Josh Sanderson. It specializes in the design and implementation of computer software and hardware solutions.</p>
+    <p>JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the design and implementation of computer software and hardware solutions.</p>
   </b-jumbotron>
   <!-- <div class="container">
           <b-btn variant="primary" href="#">More Info</b-btn>
         </div> -->
   <div class="container">
-    <!-- <div class="row">
-      <p class="lead">
+    <div class="row">
+            <div class="col-12">
+      <!-- <p class="lead text-center">
         Skills
-      </p>
-    </div> -->
+      </p> -->
+      <h4>Expertise</h4>
+      <hr/>
+    </div>
+    </div>
     <div class="row">
       <div class="col-lg-4">
         <div class="card mb-4 box-shadow">
@@ -40,12 +44,14 @@
         <div class="card mb-4 box-shadow">
           <h5 class="card-title">Systems</h5>
           <div class="card-body">
+            <p class="card-text">
             <ul>
               <li>IoT Platforms</li>
               <li>Embedded Micros</li>
               <li>Sensors & Motion Control</li>
               <li>Graphics and Visualization</li>
             </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -53,12 +59,14 @@
         <div class="card mb-4 box-shadow">
           <h5 class="card-title">Solutions</h5>
           <div class="card-body">
+            <p class="card-text">
             <ul>
               <li>Architecture & Design</li>
               <li>Prototyping</li>
-              <li>Security Review</li>
-              <li>Team Acquisition</li>
+              <li>Security Reviews</li>
+              <li>Team Coordination</li>
             </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -66,11 +74,28 @@
 
     <div class="row">
       <div class="col-12">
-        <p class="lead text-center">
+        <!-- <p class="lead text-center">
           Experience
-        </p>
+        </p> -->
+        <h4 class="mt-2">Experience <small class="text-muted">projects, clients, &amp; employers</small></h4>
+        <hr/>
       </div>
     </div>
+
+    <!-- <div class="row">
+      <div v-for='c in companies' class="col-md-4">
+
+        <div class="card mb-4 box-shadow">
+          <h5 class="card-title"><a :href="c.url"><img :src="$withBase('/i/' + c.img)" :height="c.imgH" :title="c.title"/></a></h5>
+          <div class="card-body">
+            <hr/>
+            <p>{{c.descr}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
     <div class="row">
       <div v-for='c in companies' class="col-md-4">
         <div class="experience-card">
@@ -95,22 +120,22 @@ export default {
       companies: [{
           title: 'Audible',
           url: 'https://audible.com',
-          descr: 'Technical lead on multiple confidential projects as a member of the Advanced Technology Group. Became an employee when company I cofounded was acquired in 2014.',
+          descr: 'Technical lead on multiple confidential projects as a member of the Advanced Technology Group. Became an employee when company I cofounded with three colleagues was acquired in 2014.',
           img: 'logo-audible.png',
           imgH: 40
         },
         {
           title: 'RaceHero.io',
           url: 'https://racehero.io',
-          descr: 'Primary developer of new program for acquiring and aggregating real-time race data from race track timing systems and sending it to the RaceHero.io backend.',
-          img: 'logo-racehero.svg',
+          descr: 'Primary developer of new program for acquiring and aggregating real-time race data from race track timing systems and sending it to RaceHero.io backend.',
+          img: 'logo-racehero-inv.svg',
           imgH: 35
         },
         {
           title: 'KCF Technologies Research',
           url: 'https://www.kcftech.com/research/',
           descr: 'Development of visualization and GUI control apps for internal research projects, often involving embedded systems brokering wireless sensor data.',
-          img: 'logo-kcftech.png',
+          img: 'logo-kcftech-inv.png',
           imgH: 40
         },
         {
@@ -129,9 +154,9 @@ export default {
         },
         {
           title: 'Rooftop Media',
-          url: 'https://rooftopcomedy.com',
-          descr: 'Cofounder, sometimes CTO, and tech lead for what eventually became the largest provider of original comedy based content. Developed all infrastructure and custom systems related to the business. Acquired in 2014 by Audible/Amazon.',
-          img: 'logo-rooftop.png',
+          url: 'http://rooftopcomedy.com',
+          descr: 'Cofounder, sometimes CTO, and tech lead for what became the largest provider of original comedy based content. Developed all infrastructure and custom systems related to the business. Acquired in 2014 by Audible/Amazon.',
+          img: 'logo-rooftop-inv.png',
           imgH: 37
         },
         {
@@ -159,13 +184,13 @@ export default {
           title: 'Docfinity',
           url: 'https://docfinity.com',
           descr: 'Software architect, and later consultant, for multi-platform enterprise document and image management product.',
-          img: 'logo-docfinity.png',
+          img: 'logo-docfinity-inv.png',
           imgH: 37
         },
         {
           title: 'Sony Online Entertainment',
           url: 'https://en.wikipedia.org/wiki/Daybreak_Game_Company',
-          descr: 'Short duration lead server engineer for a Triple-A MMO game title.',
+          descr: 'Short duration lead server engineer for a triple-A MMO game title.',
           img: 'logo-sony2.png',
           imgH: 40
         },
@@ -200,15 +225,22 @@ div.theme-container {
 div.card-body {
     color: #2C4256;
     padding: 0.25em;
-    background-color: transparent;
+    // background-color: transparent;
 }
 
 div.card {
-    background-color: #e1ebff;
+    background-color: rgb(252, 253, 255);
+}
+.card-text {
+  color: #212529;
 }
 
 div.experience-card {
     margin-bottom: 2.5rem;
+    // background-color: #e1ebff;
+    background-color: rgb(252, 253, 255);
+    padding: 1rem 1.5rem;
+    height:13rem;
 }
 
 .card-title {

@@ -2,24 +2,24 @@
 title: Contact
 lang: en-US
 ---
+
 <p class="lead">
 Social Links
 </p>
 
 <div class="row">
   <div class="col-12">
-
-<ul>
-<li><a href="https://www.linkedin.com/in/jgsanderson/">LinkedIn Profile</a></li>
-<li><a href="https://stackoverflow.com/users/123378/kaliatech">StackOverflow Profile</a></li>
-<li><a href="https://github.com/kaliatech">GitHub Profile</a></li>
-<li><a href="https://kaliatech.com">Personal Website</a></li>
-</ul>
-
-  </div>
+    <div class="social-btns-cont">
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/jgsanderson/"><v-icon name="brands/linkedin"/> LinkedIn Profile</a>
+    <a class="btn btn-primary" href="https://stackoverflow.com/users/123378/kaliatech"><v-icon name="brands/stack-overflow"/> StackOverflow Profile</a>
+    <a class="btn btn-primary" href="https://github.com/kaliatech"><v-icon name="brands/github"/> GitHub Profile</a>
+    <a class="btn btn-primary" href="https://www.kaliatech.com"><v-icon name="globe"/> Personal Website</a>
+    </div>
+  </div>  
 </div>
 
-<p class="lead">
+
+<p class="lead mt-3">
 Contact Info
 </p>
 
@@ -47,8 +47,7 @@ Contact Info
 </div>
 </div>
 
-
-<style>
+<style lang="scss">
 .map-responsive{
     overflow:hidden;
     padding-bottom:480px;
@@ -61,5 +60,14 @@ Contact Info
     top:0;
     width:100%;
     position:absolute;
+}
+.social-btns-cont a.btn {
+  width:11rem;
+  text-align:left;
+  margin: 0 0.5rem 0.5rem 0;
+
+  .fa-icon {
+    margin-right: 0.5rem;
+  }
 }
 </style>

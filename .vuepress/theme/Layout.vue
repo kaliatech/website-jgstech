@@ -11,6 +11,12 @@ import Navbar from './Navbar.vue'
 import LayoutHome from './LayoutHome'
 import LayoutProject from './LayoutProject'
 
+import 'vue-awesome/icons/brands/github'
+import 'vue-awesome/icons/globe'
+import 'vue-awesome/icons/brands/linkedin'
+import 'vue-awesome/icons/brands/twitter'
+import 'vue-awesome/icons/brands/stack-overflow'
+
 export default {
   components: { Navbar, LayoutHome, LayoutProject},
   created () {
