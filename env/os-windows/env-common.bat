@@ -1,6 +1,6 @@
 @echo off
 
-SET PROJECT_HOME=C:\Projects\misc\website-jgstechnical
+SET PROJECT_HOME=C:\Projects\misc\website-jgstechnical-2
 
 
 SET PATH=C:\Develop\nodejs;%PATH%

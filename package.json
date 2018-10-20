@@ -1,22 +1,38 @@
 {
-  "name": "website-jgstechnical",
+  "name": "website-jgstech",
   "version": "1.0.0",
-  "description": "This is a test.",
-  "main": "index.js",
+  "description": "Website of jgstechnical.com",
+  "author": "Kaliatech",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
   "dependencies": {
-    "bootstrap-vue": "^2.0.0-rc.11",
-    "holderjs": "^2.9.4",
-    "markdown-it-imsize": "^2.0.1",
-    "vue-awesome": "^3.1.2",
-    "vuepress": "^0.14.3"
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/free-brands-svg-icons": "^5.3.1",
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@fortawesome/vue-fontawesome": "^0.1.1",
+    "@nuxtjs/axios": "^5.0.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-beta",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-fontawesome": "^0.3.0"
   },
   "devDependencies": {
-    "node-sass": "^4.9.3",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "eslint-plugin-vue": "^4.0.0",
+    "nodemon": "^1.11.0",
+    "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
