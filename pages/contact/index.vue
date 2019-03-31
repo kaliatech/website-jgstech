@@ -9,30 +9,34 @@
         <div class="social-btns-cont">
           <a
             class="btn btn-primary"
-            href="https://www.linkedin.com/in/jgsanderson/">
+            href="https://www.linkedin.com/in/jgsanderson/"
+          >
             <span class="icon">
-              <fa :icon="['fab', 'linkedin']"/>
+              <fa :icon="['fab', 'linkedin']" />
             </span>
             LinkedIn Profile</a>
           <a
             class="btn btn-primary"
-            href="https://stackoverflow.com/users/123378/kaliatech">
+            href="https://stackoverflow.com/users/123378/kaliatech"
+          >
             <span class="icon">
-              <fa :icon="['fab', 'stack-overflow']"/>
+              <fa :icon="['fab', 'stack-overflow']" />
             </span>
             StackOverflow Profile</a>
           <a
             class="btn btn-primary"
-            href="https://github.com/kaliatech">
+            href="https://github.com/kaliatech"
+          >
             <span class="icon">
-              <fa :icon="['fab', 'github']"/>
+              <fa :icon="['fab', 'github']" />
             </span>
             GitHub Profile</a>
           <a
             class="btn btn-primary"
-            href="https://www.kaliatech.com">
+            href="https://www.kaliatech.com"
+          >
             <span class="icon">
-              <fa :icon="['fas', 'globe']"/>
+              <fa :icon="['fas', 'globe']" />
             </span>
             Personal Website</a>
         </div>
@@ -56,7 +60,6 @@
 
     <div class="row">
       <div class="col-12">
-
         <div class="map-responsive">
           <iframe
             src="https://www.google.com/maps/d/u/0/embed?mid=1TEsi5IaoFPmjnznqwtNBm1w95vwimlqv"
@@ -64,9 +67,9 @@
             height="480"
             frameborder="0"
             style="border:0"
-            allowfullscreen/>
+            allowfullscreen
+          />
         </div>
-
       </div>
     </div>
   </div>

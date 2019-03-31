@@ -1,10 +1,10 @@
 <template>
   <div>
-    <main-navbar/>
+    <main-navbar />
     <main>
-      <nuxt/>
+      <nuxt />
     </main>
-    <main-footer/>
+    <main-footer />
   </div>
 </template>
 <script>

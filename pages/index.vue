@@ -4,7 +4,8 @@
                  lead="Practical application of technology and innovation."
                  text-variant="light"
                  fluid
-                 class="bg">
+                 class="bg"
+    >
       <p>
         JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the design and implementation
         of computer software and hardware solutions.
@@ -26,7 +27,9 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="card mb-4 box-shadow">
-            <h5 class="card-title">Programming</h5>
+            <h5 class="card-title">
+              Programming
+            </h5>
             <div class="card-body">
               <!-- <img class="card-img-top" data-src="holder.js/100px50?theme=thumb&bg=2C4256&fg=eceeef&font=sans-serif&text=Programming" alt="Programming"> -->
               <div class="card-text">
@@ -49,7 +52,9 @@
         </div>
         <div class="col-lg-4">
           <div class="card mb-4 box-shadow">
-            <h5 class="card-title">Systems</h5>
+            <h5 class="card-title">
+              Systems
+            </h5>
             <div class="card-body">
               <div class="card-text">
                 <ul>
@@ -64,7 +69,9 @@
         </div>
         <div class="col-lg-4">
           <div class="card mb-4 box-shadow">
-            <h5 class="card-title">Solutions</h5>
+            <h5 class="card-title">
+              Solutions
+            </h5>
             <div class="card-body">
               <div class="card-text">
                 <ul>
@@ -84,7 +91,8 @@
           <!-- <p class="lead text-center">
             Experience
           </p> -->
-          <h4 class="mt-2">Experience
+          <h4 class="mt-2">
+            Experience
             <small class="text-muted">projects, clients, &amp; employers</small>
           </h4>
           <hr>
@@ -116,7 +124,6 @@
               {{ c.descr }}
             </p>
           </div>
-
         </div>
       </div>
     </div>
