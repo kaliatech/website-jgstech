@@ -42,7 +42,11 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     ['bootstrap-vue/nuxt', {css: false}],
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-8344371-1',
+      dev: false
+    }]
   ],
   /*
   ** Axios module configuration
