@@ -1,7 +1,7 @@
 $font-size-base: 0.8rem;
 
 $theme-colors: (
-  "primary": #2c4256
+  'primary': #2c4256,
 );
 
 //$link-color: #CCCCCC !default;
@@ -9,11 +9,11 @@ $theme-colors: (
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 html {
-  background-color: #CDD6E7;
+  background-color: #cdd6e7;
 }
 
 body {
-  background-color: #CDD6E7;
+  background-color: #cdd6e7;
 }
 
 p a {
@@ -25,7 +25,6 @@ p a {
     font-size: $font-size-base * 2;
   }
 }
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -44,6 +43,6 @@ p a {
   body {
     //height: 100%;
     //margin-bottom: 1px;
-    overflow-y: scroll
+    overflow-y: scroll;
   }
 }
