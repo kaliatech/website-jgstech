@@ -227,15 +227,15 @@ export default {
       ],
     }
   },
-  mounted() {
-    // Holder.run({
-    //   images: document.getElementsByTagName('img')
-    // })
-  },
   head() {
     return {
       title: 'JGS Technical LLC',
     }
+  },
+  mounted() {
+    // Holder.run({
+    //   images: document.getElementsByTagName('img')
+    // })
   },
 }
 </script>
