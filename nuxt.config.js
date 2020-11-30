@@ -28,6 +28,11 @@ module.exports = {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+	
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-8344371-1',
+      dev: false
+    }],
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -39,11 +44,6 @@ module.exports = {
     ['bootstrap-vue/nuxt', {css: false}],
     
     'nuxt-fontawesome',
-    
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-8344371-1',
-      dev: false
-    }]
   ],
   
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -52,12 +52,12 @@ module.exports = {
   fontawesome: {
     component: 'fa',
     imports: [
-      //import whole set
+      // import whole set
       // {
       //   set: '@fortawesome/free-solid-svg-icons',
       //   icons: ['fas']
       // },
-      //import 2 icons from set
+      // import 2 icons from set
       {
         set: '@fortawesome/free-solid-svg-icons',
         icons: ['faGlobe']
