@@ -1,11 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
-
-  /*
-  ** Headers of the page
-  */
+  // Headers of the page
   head: {
     title: pkg.name,
     meta: [
@@ -15,45 +11,44 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
 
-  /*
-  ** Global CSS
-  */
+  // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/scss/main.scss'],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  plugins: [],
+
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module',
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
+  // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
+    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
+    
+    // https://go.nuxtjs.dev/bootstrap
     ['bootstrap-vue/nuxt', {css: false}],
+    
     'nuxt-fontawesome',
+    
     ['@nuxtjs/google-analytics', {
       id: 'UA-8344371-1',
       dev: false
     }]
   ],
-  /*
-  ** Axios module configuration
-  */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
+  
+  // Axios module configuration (https://go.nuxtjs.dev/config-axios)
+  axios: {},
+  
   fontawesome: {
     component: 'fa',
     imports: [
