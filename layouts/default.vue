@@ -36,7 +36,7 @@ export default {
 }
 
 .bg {
-  background-image: url('~assets/i/bg_main_3b.png');
+  background-image: url('~assets/i/bg_main_3b.webp');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
