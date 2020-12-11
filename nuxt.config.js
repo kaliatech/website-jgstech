@@ -1,17 +1,18 @@
-const pkg = require('./package')
-
-module.exports = {
+export default {
+  target: 'static',
   // Headers of the page
   head: {
-    title: pkg.name,
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
 
@@ -28,12 +29,18 @@ module.exports = {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-	
-    ['@nuxtjs/google-analytics', {
-      id: 'UA-8344371-1',
-      dev: false
-    }],
+
+    // https://github.com/nuxt-community/style-resources-module/
+    '@nuxtjs/style-resources',
+
+    // https://google-analytics.nuxtjs.org/
+    '@nuxtjs/google-analytics',
   ],
+
+  googleAnalytics: {
+    id: 'UA-8344371-1',
+    dev: process.env.NODE_ENV !== 'production',
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -41,7 +48,7 @@ module.exports = {
     '@nuxtjs/axios',
     
     // https://go.nuxtjs.dev/bootstrap
-    ['bootstrap-vue/nuxt', {css: false}],
+    ['bootstrap-vue/nuxt'],
     
     'nuxt-fontawesome',
   ],
@@ -60,13 +67,17 @@ module.exports = {
       // import 2 icons from set
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faGlobe']
+        icons: ['faGlobe'],
       },
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['faLinkedin', 'faGithub', 'faStackOverflow', 'faTwitter']
-      }
-    ]
+        icons: ['faLinkedin', 'faGithub', 'faStackOverflow', 'faTwitter'],
+      },
+    ],
+  },
+  bootstrapVue: {
+    bootstrapCSS: false,
+    bootstrapVueCSS: false,
   },
   /*
   ** Build configuration
@@ -82,9 +93,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
-    }
-  }
+    },
+  },
 }

@@ -16,14 +16,19 @@ $ nuxt generate
 ```
 
 
-
-## Nuxt Dev
+## Nuxt Dev with Docker
 ```bash
-docker build -f /mnt/c/Projects/kaliatech-utils/dockers/nuxt-dev/Dockerfile .
+docker-compose -f /mnt/c/Projects/kaliatech-utils/dockers/kaliatech-websites/docker-compose.yaml up -d
 
-cd /projects/website-jgstechnical-nuxt2
-docker run -p 3000:3000 -u $(id -u ${USER}):$(id -g ${USER})  -v ${PWD}:/app -it 765 /bin/bash
-
-export NUXT_HOST=0.0.0.0
+// Run nuxt
+docker exec -it localdev-kaliatech-websites_nuxt_1 /bin/bash
 npm run dev
+
+// Generate images
+docker exec -it localdev-kaliatech-websites_sigal_1 /bin/bash
+sigal build
+
+// Teardown
+docker-compose -f /mnt/c/Projects/kaliatech-utils/dockers/kaliatech-websites/docker-compose.yaml down
+
 ```
