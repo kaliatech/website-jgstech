@@ -9,7 +9,7 @@
         <b-navbar-nav>
           <b-nav-item to="/" exact> Home </b-nav-item>
           <b-nav-item to="/contact/"> Contact </b-nav-item>
-          <b-nav-item href="https://www.kaliatech.com/"> Personal Website </b-nav-item>
+          <b-nav-item href="https://www.kaliatech.com/"> Kaliatech.com </b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->

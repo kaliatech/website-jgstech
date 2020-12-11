@@ -1,12 +1,7 @@
-$font-size-base: 0.8rem;
-
-$theme-colors: (
-  'primary': #2c4256,
-);
-
-//$link-color: #CCCCCC !default;
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+// Bootstrap and BootstrapVue SCSS files
+@import '_variables.scss';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
 
 html {
   background-color: #cdd6e7;
@@ -22,7 +17,7 @@ p a {
 
 @include media-breakpoint-down(sm) {
   .jumbotron h1 {
-    font-size: $font-size-base * 2;
+    font-size: $font-size-base * 3;
   }
 }
 

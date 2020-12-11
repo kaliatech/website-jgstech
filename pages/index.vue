@@ -1,17 +1,16 @@
 <template>
   <div>
-    <b-jumbotron
-      header="jgs-technical"
-      lead="Practical application of technology and innovation."
-      text-variant="light"
-      fluid
-      class="bg"
-    >
-      <p>
-        JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the design and implementation
-        of computer software and hardware solutions.
-      </p>
-    </b-jumbotron>
+    <div class="jumbotron bg jumbotron-fluid text-light">
+      <div class="container shadow p-5" style="background-color: rgba(44, 66, 86, 0.75)">
+        <h1 class="display-3" style="padding-left: 0.5rem">jgs-technical</h1>
+        <p class="lead pt-2">Practical application of technology and innovation.</p>
+        <p>
+          JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the design and
+          implementation of computer software and hardware solutions.
+        </p>
+      </div>
+    </div>
+
     <!-- <div class="container">
             <b-btn variant="primary" href="#">More Info</b-btn>
           </div> -->
@@ -130,6 +129,14 @@ export default {
     return {
       companies: [
         {
+          title: 'Practichem',
+          url: 'https://practichem.com',
+          descr:
+            'Interim director of software development. Asked to assess state of existing code bases, starting building up new team, define new architecture, and setup new infrastructure.',
+          img: 'logo-practichem.png',
+          imgH: 40,
+        },
+        {
           title: 'Audible',
           url: 'https://audible.com',
           descr:
@@ -188,7 +195,7 @@ export default {
         },
         {
           title: 'Flight Regression',
-          url: 'https://flightregression.com',
+          url: 'https://www.kaliatech.com/blog/2011/flight-regression',
           descr: 'Research and experiments showing ways to visualize general aviation accident data.',
           img: 'logo-flightregression.png',
           imgH: 33,
@@ -240,7 +247,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import '~/assets/scss/main.scss';
+@use '~/assets/scss/main.scss' as main;
 
 html {
   background-color: #cdd6e7;
@@ -258,7 +265,7 @@ div.card-body {
 
 div.card {
   background-color: rgb(252, 253, 255);
-  @include border-radius(0.25rem);
+  @include main.border-radius(0.25rem);
 }
 
 .card-text {
@@ -272,7 +279,7 @@ div.experience-card {
   padding: 1rem 1.5rem;
   height: 13rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  @include border-radius(0.25rem);
+  @include main.border-radius(0.25rem);
 }
 
 .card-title {
@@ -280,7 +287,7 @@ div.experience-card {
   color: #eceeef;
   padding: 0.5rem;
   text-align: left;
-  @include border-radius-top(0.25rem);
+  @include main.border-radius-top(0.25rem);
 }
 
 .jumbotron {

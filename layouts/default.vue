@@ -17,32 +17,35 @@ export default {
     return {
       title: this.title,
       link: [
-        { hid: 'fi-1', rel: 'apple-touch-icon', href: '/i/favicons/apple-icon-180x180.png' },
-        { hid: 'fi-2', rel: 'icon', href: '/i/favicons/android-icon-192x192.png' },
-        { hid: 'fi-3', rel: 'icon', href: '/i/favicons/favicon-96x96.png' },
+        { hid: 'fi-1', rel: 'apple-touch-icon', sizes: '180x180', href: '/i/favicons/apple-touch-icon.png' },
+        { hid: 'fi-2', rel: 'icon', type: 'image/png', sizes: '32x32', href: '/i/favicons/favicon-32x32.png' },
+        { hid: 'fi-3', rel: 'icon', type: 'image/png', sizes: '16x16', href: '/i/favicons/favicon-16x16.png' },
+        { hid: 'fi-4', rel: 'manifest', href: '/i/favicons/site.webmanifest' },
       ],
     }
   },
 }
 </script>
 <style lang="scss">
-@import '~/assets/scss/main.scss';
+// @use 'node_modules/bootstrap/scss/mixins' as bootstrap;
+// @use 'node_modules/bootstrap/scss/variables';
+@use '~/assets/scss/main.scss' as main;
 
 .header-anchor {
   display: none;
 }
 
 .bg {
-  background-image: url('~assets/i/bg_main.jpg');
+  background-image: url('~assets/i/bg_main_3b.png');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@include media-breakpoint-down(xs) {
-  .bg {
-    background-image: url('~assets/i/bg_main_inv.jpg');
-  }
-}
+//@include main.media-breakpoint-down(xs) {
+//  .bg {
+//    background-image: url('~assets/i/bg_main_inv.jpg');
+//  }
+//}
 </style>

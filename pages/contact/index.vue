@@ -9,25 +9,25 @@
             <span class="icon">
               <fa :icon="['fab', 'linkedin']" />
             </span>
-            LinkedIn Profile</a
+            LinkedIn</a
           >
           <a class="btn btn-primary" href="https://stackoverflow.com/users/123378/kaliatech">
             <span class="icon">
               <fa :icon="['fab', 'stack-overflow']" />
             </span>
-            StackOverflow Profile</a
+            StackOverflow</a
           >
           <a class="btn btn-primary" href="https://github.com/kaliatech">
             <span class="icon">
               <fa :icon="['fab', 'github']" />
             </span>
-            GitHub Profile</a
+            GitHub</a
           >
           <a class="btn btn-primary" href="https://www.kaliatech.com">
             <span class="icon">
               <fa :icon="['fas', 'globe']" />
             </span>
-            Personal Website</a
+            Kaliatech.com</a
           >
         </div>
       </div>
