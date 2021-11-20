@@ -4,7 +4,7 @@
       <p class="text-muted small" style="text-align: center">
         email <a href="mailto:info@jgstechnical.com" title="Email Josh">info@jgstechnical.com</a> <br />
         phone +1 814.359.9317 USA <br />
-        &copy; 2020 <br />
+        &copy; 2021 <br />
       </p>
     </div>
   </footer>
