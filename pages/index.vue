@@ -178,8 +178,7 @@ export default {
         },
         {
           title: 'Rooftop Media',
-          url:
-            'https://uk.reuters.com/article/uk-amazon-com-media-rooftop-exclusive/exclusive-amazon-buys-comedy-service-rooftop-media-to-expand-digital-content-idUKKBN0IG1XY20141027',
+          url: 'https://uk.reuters.com/article/uk-amazon-com-media-rooftop-exclusive/exclusive-amazon-buys-comedy-service-rooftop-media-to-expand-digital-content-idUKKBN0IG1XY20141027',
           descr:
             'Cofounder, sometimes CTO, and tech lead for what became the largest provider of original comedy based content. Developed all infrastructure and custom systems related to the business. Acquired in 2014 by Audible/Amazon.',
           img: 'logo-rooftop-inv.png',
