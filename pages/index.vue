@@ -114,9 +114,7 @@
               <a :href="c.url"><img :src="'/i/' + c.img" :height="c.imgH" :title="c.title" /></a>
             </div>
             <hr />
-            <p>
-              {{ c.descr }}
-            </p>
+            <p v-html="c.descr" />
           </div>
         </div>
       </div>
@@ -128,6 +126,15 @@ export default {
   data() {
     return {
       companies: [
+        {
+          title: 'Amazon Robotics',
+          url: 'https://www.amazon.jobs/en/teams/amazon-robotics',
+          descr:
+            'Senior engineer on the worldwide continuous improvement team. Set direction for multiple projects, including deployment of a next generation <a href="https://aws.amazon.com/solutions/implementations/amazon-virtual-andon/">Virtual Andon</a> system to fulfillment centers.\n',
+          isDescrHtml: true,
+          img: 'logo-ar.svg',
+          imgH: 40,
+        },
         {
           title: 'Practichem',
           url: 'https://practichem.com',
