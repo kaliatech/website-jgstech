@@ -14,7 +14,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
+  telemetry: false,
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~/assets/scss/main.scss'],
@@ -46,16 +46,16 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    
+
     // https://go.nuxtjs.dev/bootstrap
     ['bootstrap-vue/nuxt'],
-    
+
     'nuxt-fontawesome',
   ],
-  
+
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
-  
+
   fontawesome: {
     component: 'fa',
     imports: [
@@ -80,12 +80,12 @@ export default {
     bootstrapVueCSS: false,
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
