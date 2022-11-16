@@ -127,10 +127,19 @@ export default {
     return {
       companies: [
         {
+          title: 'Shield AI',
+          url: 'https://shield.ai',
+          descr:
+            'Senior staff engineer on the <a href="https://shield.ai/hivemind/">Hivemind</a> command-and-control team. R&D for GUI applications used to monitor and control autonomous aircraft. Primarily <a href="https://shield.ai/v-bat/">V-BATs</a>.',
+          isDescrHtml: true,
+          img: 'logo-sai.svg',
+          imgH: 32,
+        },
+        {
           title: 'Amazon Robotics',
           url: 'https://www.amazon.jobs/en/teams/amazon-robotics',
           descr:
-            'Senior engineer on the worldwide continuous improvement team. Set direction for multiple projects, including deployment of a next generation <a href="https://aws.amazon.com/solutions/implementations/amazon-virtual-andon/">Virtual Andon</a> system to fulfillment centers.\n',
+            'Senior engineer on the worldwide continuous improvement team. Set direction for multiple projects, including deployment of a next generation <a href="https://aws.amazon.com/solutions/implementations/amazon-virtual-andon/">Virtual Andon</a> system to fulfillment centers.',
           isDescrHtml: true,
           img: 'logo-ar.svg',
           imgH: 40,
