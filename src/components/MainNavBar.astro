@@ -2,9 +2,9 @@
 console.log('Astro.url', Astro.url)
 ---
 
-<div class="flex flex-grow align-middle items-center ml-4 mt-1">
+<div class="ml-4 mt-1 flex flex-grow items-center align-middle">
   <div>jgs-technical</div>
-  <div class="justify-start flex-grow">
+  <div class="flex-grow justify-start">
     <div
       class={`btn btn-link no-animation no-underline hover:no-underline ${Astro.url.pathname?.length > 2 ? 'hover:text-accent' : ''}`}
     >

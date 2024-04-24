@@ -19,7 +19,6 @@ html {
 @tailwind utilities;
 
 @layer base {
-
   h1 {
     @apply text-2xl;
   }
@@ -30,8 +29,6 @@ html {
     border: 1px solid red;
   }
 }
-
-
 
 /*
 !* If the user prefers dark mode,
