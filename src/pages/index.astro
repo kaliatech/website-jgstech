@@ -1,15 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/BaseLayout.astro'
 import Card from '../components/Card.astro'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="JGS Technical LLC">
   <main>
-    <div class="container-lg border-blue-500 border-2">
+    <div class="container mx-auto border-2 border-blue-500 p-4">
+      <div class="jumbotron bg jumbotron-fluid text-light">
+        <div class="container shadow p-5" style="background-color: rgba(44, 66, 86, 0.75)">
+          <h1 class="">jgs-technical</h1>
+          <p>Practical application of technology and innovation.</p>
+          <p>
+            JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the
+            design and implementation of computer software and hardware solutions.
+          </p>
+        </div>
+      </div>
+
       <h1>Welcome to <span class="text-gradient">Astro</span></h1>
       <button class="btn">Hello daisyUI</button>
 
-      <p class="instructions">
+      <p class="instructions text-base">
         To get started, open the directory <code>src/pages</code> in your project.<br />
         <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
       </p>
@@ -40,7 +51,7 @@ import Card from '../components/Card.astro'
 </Layout>
 
 <style>
-  main {
+  /*  main {
     border: 1px solid blue;
-  }
+  }*/
 </style>

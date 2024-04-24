@@ -1,0 +1,52 @@
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+}
+
+html {
+  font-size: 14px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  main {
+    border: 1px solid red;
+  }
+}
+
+
+
+/*
+!* If the user prefers dark mode,
+we of course apply color-scheme: dark, as usual *!
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: light;
+  }
+}
+
+!* If the user prefers light mode,
+we still enforce color-scheme: dark, despite the user preference *!
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+}
+*/
