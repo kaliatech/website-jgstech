@@ -5,13 +5,8 @@ export enum ThemeMode {
 }
 
 export function getThemeMode(): ThemeMode {
-  const storedTheme = localStorage.getItem('theme')
-
-  if (storedTheme) {
-    return storedTheme === 'DARK' ? ThemeMode.DARK : ThemeMode.LIGHT
-  }
-
-  return ThemeMode.SYSTEM
+  const themeMode = localStorage.getItem('themeMode')
+  return themeMode ? (themeMode as ThemeMode) : ThemeMode.SYSTEM
 }
 
 export default function getThemeClass(): string {
