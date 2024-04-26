@@ -54,14 +54,14 @@ export default {
       {
         light: {
           ...require('daisyui/src/theming/themes')['light'],
-          // primary: 'red',
+          primary: '#233443',
           // secondary: 'teal',
           //['base-100']: 'oklch(var(--b1))',
           //'base-100': 'rgb(20,20,20)',
         },
         dark: {
           ...require('daisyui/src/theming/themes')['dark'],
-          // primary: 'green',
+          primary: '#678DB1',
           // secondary: 'teal',
         },
       },

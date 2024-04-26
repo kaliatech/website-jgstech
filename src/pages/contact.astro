@@ -1,5 +1,56 @@
 ---
 import Layout from '../layouts/BaseLayout.astro'
+import MapChart from '../components-client/ContactMap/ContactMap'
+
+import iconLinkedIn from '../assets/i/icons/linkedin.svg?raw'
+import iconSo from '../assets/i/icons/stackoverflow.svg?raw'
 ---
 
-<Layout title="JGS Technical LLC - Contact"> CONTACT </Layout>
+<Layout title="JGS Technical LLC - Contact">
+  <div class="container mx-auto">
+    <div class="my-4">
+      <h2 class="my-4">Social Links</h2>
+      <div class="flex flex-wrap gap-4">
+        <div>
+          <a
+            class="btn btn-primary w-40"
+            href="https://www.linkedin.com/in/jgsanderson/"
+            rel="noopener"
+            ><span class="h-6 w-6 fill-white dark:invert">
+              <Fragment set:html={iconLinkedIn} />
+            </span>
+            <span class="">LinkedIn</span>
+          </a>
+        </div>
+        <div>
+          <a
+            class="btn btn-primary w-40"
+            href="https://stackoverflow.com/users/123378/kaliatech"
+            rel="noopener"
+            ><div class="h-6 w-6 fill-white dark:invert">
+              <Fragment set:html={iconSo} />
+            </div>
+            <div class="">StackOverflow</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="my-8">
+      <h2 class="my-4">Contact Info</h2>
+      <p>I often work out of my home office in Raleigh, NC.</p>
+      <div class="my-4 flex flex-col">
+        <div>
+          email <a class="link" href="mailto:info@jgstechnical.com">info@jgstechnical.com</a>
+        </div>
+        <div>
+          phone <a class="link" href="tel:+1-814-359-9317">+1 814.359.9317 USA</a>
+        </div>
+        <!--<div>© 2024</div>-->
+      </div>
+    </div>
+
+    <div class="flex min-h-1 min-w-1">
+      <MapChart client:only="react" />
+    </div>
+  </div>
+</Layout>

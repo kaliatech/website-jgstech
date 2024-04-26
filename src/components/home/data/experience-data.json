@@ -38,7 +38,7 @@
   },
   {
     "title": "KCF Technologies Research",
-    "url": "https://www.kcftech.com/research/",
+    "url": "https://kcftech.com/",
     "descr": "Development of visualization and GUI control apps for internal research projects, often involving embedded systems brokering wireless sensor data.",
     "img": "logo-kcftech-inv.png",
     "imgH": 40
@@ -52,7 +52,7 @@
   },
   {
     "title": "Smart Diagnostics by KCF",
-    "url": "https://kcftech.com",
+    "url": "https://kcftech.com/solutions/smartdiagnostics/",
     "descr": "Development of browser based 2D visualizations, manipulation of maps for wireless vibration sensor placements, and integration of large scale time-series database.",
     "img": "logo-smartdiagnostics.png",
     "imgH": 31
