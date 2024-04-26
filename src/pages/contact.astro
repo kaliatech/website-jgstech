@@ -4,6 +4,9 @@ import MapChart from '../components-client/ContactMap/ContactMap'
 
 import iconLinkedIn from '../assets/i/icons/linkedin.svg?raw'
 import iconSo from '../assets/i/icons/stackoverflow.svg?raw'
+import iconGithub from '../assets/i/icons/github.svg?raw'
+import iconGlobe from '../assets/i/icons/globe.svg?raw'
+import SocialIcon from '../components/contact/SocialIcon.astro'
 ---
 
 <Layout title="JGS Technical LLC - Contact">
@@ -11,28 +14,18 @@ import iconSo from '../assets/i/icons/stackoverflow.svg?raw'
     <div class="my-4">
       <h2 class="my-4">Social Links</h2>
       <div class="flex flex-wrap gap-4">
-        <div>
-          <a
-            class="btn btn-primary w-40"
-            href="https://www.linkedin.com/in/jgsanderson/"
-            rel="noopener"
-            ><span class="h-6 w-6 fill-white dark:invert">
-              <Fragment set:html={iconLinkedIn} />
-            </span>
-            <span class="">LinkedIn</span>
-          </a>
-        </div>
-        <div>
-          <a
-            class="btn btn-primary w-40"
-            href="https://stackoverflow.com/users/123378/kaliatech"
-            rel="noopener"
-            ><div class="h-6 w-6 fill-white dark:invert">
-              <Fragment set:html={iconSo} />
-            </div>
-            <div class="">StackOverflow</div>
-          </a>
-        </div>
+        <SocialIcon
+          name="LinkedIn"
+          iconSvg={iconLinkedIn}
+          url="https://www.linkedin.com/in/jgsanderson/"
+        />
+        <SocialIcon
+          name="StackOverflow"
+          iconSvg={iconSo}
+          url="https://stackoverflow.com/users/123378/kaliatech"
+        />
+        <SocialIcon name="GitHub" iconSvg={iconGithub} url="https://github.com/kaliatech" />
+        <SocialIcon name="Kaliatech.com" iconSvg={iconGlobe} url="https://kaliatech.com" />
       </div>
     </div>
     <div class="my-8">
