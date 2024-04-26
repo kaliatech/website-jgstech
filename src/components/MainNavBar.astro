@@ -26,16 +26,25 @@ import { ThemeToggle } from '../components-client/ThemeToggle/ThemeToggle'
             tabindex="0"
             class="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
           >
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a class="m-1 p-4" href="/">Home</a></li>
+            <li><a class="m-1 p-4" href="/contact">Contact</a></li>
           </ul>
         </div>
-        <h1 class="whitespace-nowrap text-xl">jgs-technical</h1>
+        <a href="/">
+          <h1 class="whitespace-nowrap text-xl">jgs-technical</h1>
+        </a>
       </div>
       <div class="navbar-start ml-8 hidden sm:flex sm:flex-grow">
         <ul class="menu menu-horizontal px-1">
-          <li><a href="/">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li>
+            <a href="/" class={`${Astro.url.pathname?.length > 2 ? '' : ''}`}>Home</a>
+          </li>
+          <li>
+            <a
+              href="/contact"
+              class={`${Astro.url.pathname.startsWith('/contact') ? 'font-bold' : ''}`}>Contact</a
+            >
+          </li>
         </ul>
       </div>
       <div class="navbar-end relative flex flex-grow">
