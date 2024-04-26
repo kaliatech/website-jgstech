@@ -1,0 +1,109 @@
+[
+  {
+    "title": "Shield AI",
+    "url": "https://shield.ai",
+    "descr": "Senior staff engineer on the early R&D team for <a href=\"https://shield.ai/hivemind/\">Hivemind</a>, reporting to CTO. Designed and developed next generation GUI applications for controlling and monitoring AI on autonomous aircraft.",
+    "isDescrHtml": true,
+    "img": "logo-sai.svg",
+    "imgH": 32
+  },
+  {
+    "title": "Amazon Robotics",
+    "url": "https://www.amazon.jobs/en/teams/amazon-robotics",
+    "descr": "Senior engineer on the worldwide continuous improvement team. Set direction for multiple projects, including deployment of a next generation <a href=\"https://docs.aws.amazon.com/architecture-diagrams/latest/amazon-virtual-andon/amazon-virtual-andon.html\">Virtual Andon</a> system to fulfillment centers.",
+    "isDescrHtml": true,
+    "img": "logo-ar.svg",
+    "imgH": 40
+  },
+  {
+    "title": "Practichem",
+    "url": "https://practichem.com",
+    "descr": "Interim director of software development. Asked to assess state of existing code bases, starting building up new team, define new architecture, and setup new infrastructure.",
+    "img": "logo-practichem.png",
+    "imgH": 40
+  },
+  {
+    "title": "Audible",
+    "url": "https://audible.com",
+    "descr": "Technical lead on multiple confidential projects as a member of the Advanced Technology Group. Became an employee when company I cofounded with three colleagues was acquired in 2014.",
+    "img": "logo-audible.png",
+    "imgH": 40
+  },
+  {
+    "title": "RaceHero.io",
+    "url": "https://racehero.io",
+    "descr": "Primary developer of new program for acquiring and aggregating real-time race data from race track timing systems and sending it to <a href=\"https://racehero.io\">RaceHero.io</a> backend.",
+    "img": "logo-racehero-inv.svg",
+    "imgH": 35
+  },
+  {
+    "title": "KCF Technologies Research",
+    "url": "https://www.kcftech.com/research/",
+    "descr": "Development of visualization and GUI control apps for internal research projects, often involving embedded systems brokering wireless sensor data.",
+    "img": "logo-kcftech-inv.png",
+    "imgH": 40
+  },
+  {
+    "title": "Online registration and event management service for motorsport events powered by MotorsportReg.com",
+    "url": "https://motorsportreg.com",
+    "descr": "Creation of complex dynamic financial reports for customers and integration of affiliate ecommerce programs.",
+    "img": "logo-msr.png",
+    "imgH": 31
+  },
+  {
+    "title": "Smart Diagnostics by KCF",
+    "url": "https://kcftech.com",
+    "descr": "Development of browser based 2D visualizations, manipulation of maps for wireless vibration sensor placements, and integration of large scale time-series database.",
+    "img": "logo-smartdiagnostics.png",
+    "imgH": 31
+  },
+  {
+    "title": "Rooftop Media",
+    "url": "https://www.hollywoodreporter.com/business/digital/amazons-audible-buys-comedy-service-744292/",
+    "descr": "Cofounder, sometimes CTO, and tech lead for what became the largest provider of original comedy based content. Developed all infrastructure and custom systems related to the business. Acquired in 2014 by Audible/Amazon.",
+    "img": "logo-rooftop-inv.png",
+    "imgH": 37
+  },
+  {
+    "title": "Minitab",
+    "url": "https://minitab.com",
+    "descr": "Web development for global CMS driven website, including custom video players and animations for marketing pieces.",
+    "img": "logo-minitab.svg",
+    "imgH": 25
+  },
+  {
+    "title": "Flight Regression",
+    "url": "https://www.kaliatech.com/blog/2011/flight-regression",
+    "descr": "Research and experiments showing ways to visualize general aviation accident data.",
+    "img": "logo-flightregression.png",
+    "imgH": 33
+  },
+  {
+    "title": "Avsafe",
+    "url": "https://avsafe.com/",
+    "descr": "Presentations for reconstructing general aviation accidents, often for legal proceedings. Required development of programs to analyze raw RADAR data.",
+    "img": "logo-avsafe.png",
+    "imgH": 37
+  },
+  {
+    "title": "Docfinity",
+    "url": "https://docfinity.com",
+    "descr": "Software architect, and later consultant, for multi-platform enterprise document and image management product.",
+    "img": "logo-docfinity-inv.png",
+    "imgH": 37
+  },
+  {
+    "title": "Sony Online Entertainment",
+    "url": "https://en.wikipedia.org/wiki/Daybreak_Game_Company",
+    "descr": "Short duration lead server engineer for a triple-A MMO game title.",
+    "img": "logo-sony2.png",
+    "imgH": 40
+  },
+  {
+    "title": "IconMedialab ATG",
+    "url": "http://www.iconmedialab.se/",
+    "descr": "Team lead in premiere digital media agency during the dot com era, building everything from websites to in-store systems and multimedia displays.",
+    "img": "logo-iconmedialab2.svg",
+    "imgH": 25
+  }
+]

@@ -1,0 +1,45 @@
+---
+import ExperienceCard from './ExperienceCard.astro'
+
+import data from './data/experience-data.json'
+---
+
+<!--img={import(`../../assets/i/logos/${exp.img}`)}-->
+<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+  {
+    data.map((exp, _i) => {
+      let parts = exp.img.split('.')
+      let base = parts.slice(0, -1).join('.')
+      let ext = parts.pop()
+      return (
+        <ExperienceCard
+          title={exp.title}
+          img={(() => import(`../../assets/i/logos/${base}.${ext}`))()}
+          imgH={exp.imgH}
+          htmlText={exp.descr}
+          url={exp.url}
+        />
+      )
+    })
+  }
+  <!--
+  <ExperienceCard
+    title="Shield AI"
+    img={saiLogo}
+    imgH={32}
+    htmlText='Senior staff engineer on the <a href="https://shield.ai/hivemind/">Hivemind</a> early R&D team reporting to CTO. Designed and developed next generation GUI applications for controlling and monitoring AI on autonomous aircraft.'
+    url="https://shield.ai/"
+  />
+  <ExperienceCard
+    title="Rooftop"
+    img={rftpLogo}
+    imgH={35}
+    htmlText="Cofounder, sometimes CTO, and tech lead for what became the largest provider of original comedy based content. Developed all infrastructure and custom systems related to the business. Acquired in 2014 by Audible/Amazon."
+    url="https://www.hollywoodreporter.com/business/digital/amazons-audible-buys-comedy-service-744292/"
+  >
+    <ExperienceCard />
+    <ExperienceCard />
+    <ExperienceCard />
+  </ExperienceCard>
+-->
+</div>

@@ -3,7 +3,7 @@ import { ThemeToggle } from '../components-client/ThemeToggle/ThemeToggle'
 //console.log('Astro.url', Astro.url)
 ---
 
-<div class="bg-base-100 dark:bg-base-300">
+<div class="bg-jgsblue-600 text-white dark:bg-jgsblue-800 dark:text-base-content">
   <div class="container mx-auto">
     <div class="navbar">
       <div class="navbar-start w-fit">
@@ -38,7 +38,7 @@ import { ThemeToggle } from '../components-client/ThemeToggle/ThemeToggle'
           <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
-      <div class="navbar-end flex flex-grow">
+      <div class="navbar-end relative flex flex-grow">
         <ThemeToggle client:only="react" />
       </div>
     </div>

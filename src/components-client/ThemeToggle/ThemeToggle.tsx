@@ -38,8 +38,10 @@ export function ThemeToggle({ panelClassName = 'mt-4' }: { panelClassName?: stri
     const newMode = getThemeMode()
     if (newMode === ThemeMode.LIGHT) {
       document.documentElement.classList.remove('dark')
+      document.documentElement.setAttribute('data-theme', 'light')
     } else {
       document.documentElement.classList.add('dark')
+      document.documentElement.setAttribute('data-theme', 'dark')
     }
     setSetting(newMode)
   }, [])
@@ -83,7 +85,7 @@ export function ThemeToggle({ panelClassName = 'mt-4' }: { panelClassName?: stri
       </Listbox.Button>
       <Listbox.Options
         className={clsx(
-          'dark:highlight-white/5 absolute right-0 z-50 mx-2 mt-20 w-36 overflow-hidden rounded-lg bg-white py-1 text-sm font-semibold text-slate-700 shadow-lg ring-1 ring-slate-900/10 dark:bg-slate-800 dark:text-slate-300 dark:ring-0',
+          'dark:highlight-white/5 absolute right-0 top-0.5 z-50 mx-2 w-36 overflow-hidden rounded-lg bg-white py-1 text-sm font-semibold text-slate-700 shadow-lg ring-1 ring-slate-900/10 dark:bg-slate-800 dark:text-slate-300 dark:ring-0',
           panelClassName,
         )}
       >

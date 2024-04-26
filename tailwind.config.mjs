@@ -1,8 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from 'tailwindcss/plugin'
-
+import defaultTheme from 'tailwindcss/defaultTheme'
 import daisyUiPlugin from 'daisyui'
+
+import typographyPlugin from '@tailwindcss/typography'
 
 export default {
   darkMode: 'selector', // or 'media'
@@ -10,25 +12,34 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      container: {
+        // or have default horizontal padding
+        padding: '1rem',
+      },
+
       colors: {
         jgsblue: {
-          50: '#FAFCFF',
-          100: '#F0F6FF',
-          200: '#E0EDFF',
-          300: '#D1E3FF',
-          400: '#C7DDFF',
-          500: '#B6D3FF',
-          600: '#61A0FF',
-          700: '#0569FF',
-          800: '#0045AD',
-          900: '#002357',
-          950: '#00122E',
+          50: '#E7EDF3',
+          100: '#CCD9E5',
+          200: '#9AB3CB',
+          300: '#678DB1',
+          400: '#456787',
+          500: '#2C4256',
+          600: '#233443',
+          700: '#1A2733',
+          800: '#111A22',
+          900: '#090D11',
+          950: '#05080A',
         },
       },
+      // fontFamily: {
+      //   sans: ['Raleway Variable', ...defaultTheme.fontFamily.sans],
+      // },
     },
   },
   extend: {},
   plugins: [
+    typographyPlugin,
     daisyUiPlugin,
     // plugin(function ({ addBase }) {
     //   addBase({
@@ -39,6 +50,21 @@ export default {
   daisyui: {
     // https://daisyui.com/docs/config/
     logs: false,
-    themes: ['light', 'dark'],
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+          // primary: 'red',
+          // secondary: 'teal',
+          //['base-100']: 'oklch(var(--b1))',
+          //'base-100': 'rgb(20,20,20)',
+        },
+        dark: {
+          ...require('daisyui/src/theming/themes')['dark'],
+          // primary: 'green',
+          // secondary: 'teal',
+        },
+      },
+    ],
   },
 }

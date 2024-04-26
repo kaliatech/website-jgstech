@@ -1,54 +1,84 @@
 ---
 import Layout from '../layouts/BaseLayout.astro'
-import Card from '../components/Card.astro'
+import ExpertiseCard from '../components/home/ExpertiseCard.astro'
 
-import { Image } from 'astro:assets'
+//import { Image } from 'astro:assets'
 import bgMain3b from '../assets/bg_main_3b.webp'
-const bgMain3bStyle = `background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(138,38,38,0.8), rgba(38,38,38,1)), url('${bgMain3b.src}');`
+import ExperienceSection from '../components/home/ExperienceSection.astro'
+//const bgMain3bStyle = `background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(138,38,38,0.8), rgba(38,38,38,1)), url('${bgMain3b.src}');`
 const bgMain3bStyleSrc = bgMain3b.src
 const bgImgUrl = bgMain3bStyleSrc
 ---
 
 <Layout title="JGS Technical LLC">
-  <main>
-    <div
-      class="border-3 bg1 dark:bg1 flex h-80 items-center overflow-hidden bg-base-300 bg-cover bg-center bg-no-repeat"
-    >
-      <div class="container mx-auto flex-grow">
-        <div class="shadow-2x2 bg-gray-800 bg-opacity-50 p-8 backdrop-blur-sm">
-          <h1 class="pb-4 text-4xl md:text-6xl">jgs-technical</h1>
-          <p>Practical application of technology and innovation.</p>
-          <p>
-            JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the
-            design and implementation of computer software and hardware solutions.
-          </p>
-        </div>
+  <div class="bg1 flex h-[400px] items-center overflow-hidden bg-cover bg-center bg-no-repeat">
+    <div class="container mx-auto">
+      <!-- Note the blur filter also somewhat blurs the text. Hard to notice. backdrop-blur-sm-->
+      <div
+        class="flex-grow bg-jgsblue-600 bg-opacity-50 px-16 pb-20 pt-14 shadow-2xl backdrop-blur-sm dark:bg-jgsblue-700 dark:bg-opacity-50"
+      >
+        <h1 class="pb-3 pl-2 text-5xl font-light text-white md:text-[5.5rem]">jgs-technical</h1>
+        <h2 class="py-3 font-extralight text-white">
+          Practical application of technology and innovation.
+        </h2>
+        <p class="flex-grow font-light text-neutral-content">
+          JGS Technical LLC is a small consultancy owned by Josh Sanderson, specializing in the
+          design and implementation of computer software and hardware solutions.
+        </p>
       </div>
     </div>
-    <div class="container mx-auto">
-      <div>Test</div>
+  </div>
+  <div class="container mx-auto">
+    <div>
+      <h2 class="mb-2 mt-4">Expertise</h2>
+      <hr class="border-neutral-400" />
     </div>
-  </main>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+      <ExpertiseCard
+        title="Programming"
+        items={['Web Apps', 'Desktop Apps', 'Mobile Apps', 'Cloud Architectures']}
+      />
+      <ExpertiseCard
+        title="Systems"
+        items={['Cross-platform', 'Microcontrollers', 'Sensing & Motion', 'Visualization']}
+      />
+      <ExpertiseCard
+        title="Solutions"
+        items={['Architecture & Design', 'Prototyping', 'Security Reviews', 'Team Coordination']}
+      />
+    </div>
+  </div>
+  <div class="container mx-auto mt-8">
+    <div>
+      <h2 class="mb-2 mt-4">
+        Experience <small class="ml-2">projects, clients, & employers</small>
+      </h2>
+      <hr class="border-neutral-400" />
+    </div>
+    <ExperienceSection />
+  </div>
+
+  <style define:vars={{ bgImgUrl: `url("${bgImgUrl}")` }}>
+    .bg1 {
+      background-color: #456787; /* jgsblue[400] */
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(220, 220, 220, 0.5),
+          rgba(220, 220, 220, 0.6)
+        ),
+        var(--bgImgUrl);
+    }
+
+    :global(.dark) .bg1 {
+      background-color: #456787; /* jgsblue[400] */
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(38, 38, 38, 0.5),
+          rgba(38, 38, 38, 0.75)
+        ),
+        var(--bgImgUrl);
+    }
+  </style>
 </Layout>
-
-<style define:vars={{ bgImgUrl: `url("${bgImgUrl}")` }}>
-  .bg1 {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.75)
-      ),
-      var(--bgImgUrl);
-  }
-
-  :global(.dark) .bg1 {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0),
-        rgba(38, 38, 38, 0.5),
-        rgba(38, 38, 38, 0.75)
-      ),
-      var(--bgImgUrl);
-  }
-</style>
