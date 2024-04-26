@@ -9,6 +9,7 @@
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "outDir": "dist",
     "resolveJsonModule": true,
     "target": "ES2022",
     "strict": true,
@@ -16,5 +17,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "jsxImportSource": "react"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "public",
+  ]
 }
