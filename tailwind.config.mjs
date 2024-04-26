@@ -18,6 +18,8 @@ export default {
       },
 
       colors: {
+        primaryt: '#233443',
+        primarytdark: '#233443',
         jgsblue: {
           50: '#E7EDF3',
           100: '#CCD9E5',
