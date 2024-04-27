@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  width="1023.9999"
+  height="1023.9999"
+  viewBox="0 0 270.93331 270.93331"
+  version="1.1"
+  id="svg1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    .fav-bg { fill: #233443 }
+    .fav-fg { fill: white }
+    @media (prefers-color-scheme: light) {
+    .fav-bg { fill: #101A22 }
+    .fav-fg { fill: #A6ADBB }
+    }
+  </style>
+  <defs
+    id="defs1"/>
+  <g
+    id="layer2">
+    <rect
+      style="fill-opacity:1;stroke-width:0.265;stroke-dasharray:none"
+      class="fav-bg"
+      id="rect3"
+      width="256.76953"
+      height="255.84595"
+      x="7.0819011"
+      y="7.5436931"
+      ry="37.122955"/>
+  </g>
+  <g
+    id="layer1">
+    <text
+      xml:space="preserve"
+      style="font-size:151.591px;fill:#f9f9f9;stroke-width:2.36861"
+      x="50.825912"
+      y="164.02592"
+      id="text1"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:151.591px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI';stroke-width:2.36861"
+         class="fav-fg"
+         x="50.825912"
+         y="164.02592">jgs</tspan></text>
+  </g>
+</svg>
