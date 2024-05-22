@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` shell
+```shell
 # install dependencies
 $ npm install
 
@@ -12,11 +12,12 @@ $ npm install
 $ npm run dev
 
 # build static for deploy
-$ npm run build build
+$ npm run build
 ```
 
 ## History
 
 ### 2024-04-27
- - Switched from Nuxt build to Astro build
- - Switched from bootstrap CSS to tailwind css
+
+- Switched from Nuxt build to Astro build
+- Switched from bootstrap CSS to tailwind css

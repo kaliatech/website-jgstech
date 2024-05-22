@@ -8,8 +8,10 @@ import typographyPlugin from '@tailwindcss/typography'
 
 export default {
   darkMode: 'selector', // or 'media'
-
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: [
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    './node_modules/@kaliatech/shared-astro-tw/src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+  ],
   theme: {
     extend: {
       container: {

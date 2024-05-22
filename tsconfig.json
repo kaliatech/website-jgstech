@@ -18,9 +18,5 @@
     "forceConsistentCasingInFileNames": true,
     "jsxImportSource": "react"
   },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "public",
-  ]
+  "exclude": ["node_modules", "dist", "public"]
 }
