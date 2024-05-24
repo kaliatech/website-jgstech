@@ -5,12 +5,12 @@ interface Props {
 }
 ---
 
-<div class="mt-4 rounded-sm border border-jgsblue-200 shadow-sm dark:border-jgsblue-600">
-  <!--<div class="rounded-t-md bg-gradient-to-b from-gray-700 to-jgsblue-700">-->
-  <div class="rounded-t-sm bg-jgsblue-600 shadow-md dark:bg-jgsblue-700">
+<div class="border-theme-200 dark:border-theme-600 mt-4 rounded-sm border shadow-sm">
+  <!--<div class="rounded-t-md bg-gradient-to-b from-gray-700 to-theme-700">-->
+  <div class="bg-theme-600 dark:bg-theme-700 rounded-t-sm shadow-md">
     <h3 class="px-4 py-3 text-lg text-neutral-content">{Astro.props.title ?? '???'}</h3>
   </div>
-  <div class="text-content rounded-b-sm bg-slate-50 text-neutral-content dark:bg-jgsblue-600">
+  <div class="text-content dark:bg-theme-600 rounded-b-sm bg-slate-50 text-neutral-content">
     <ul class="ml-8 list-inside list-disc py-4 pb-8 leading-6 text-base-content">
       {Astro.props?.items?.map((item) => <li>{item}</li>)}
     </ul>

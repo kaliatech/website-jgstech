@@ -1,17 +1,24 @@
 ---
-import { ThemeToggle } from '@kaliatech/shared-astro-tw/components-client/ThemeToggle/ThemeToggle.tsx'
+import { ThemeToggle } from '@kaliatech/shared-astro-tw/components-client/ThemeToggle/ThemeToggle.jsx'
+
+import NavBarItem from '@kaliatech/shared-astro-tw/components/navbar/NavBarItem'
 //console.log('Astro.url', Astro.url)
 ---
 
-<div class="bg-jgsblue-600 text-white dark:bg-jgsblue-800 dark:text-base-content">
+<!--
+<div
+  class="text-theme-offwhite from-theme-400 to-theme-700 dark:bg-theme-900 dark:text-theme-100 bg-gradient-to-bl"
+>
+-->
+<div class="bg-theme-600 dark:bg-theme-800 text-base-content">
   <div class="container mx-auto">
-    <div class="navbar">
+    <div class="navbar z-[1000]">
       <div class="navbar-start w-fit">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost sm:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              class="h-4 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -24,65 +31,34 @@ import { ThemeToggle } from '@kaliatech/shared-astro-tw/components-client/ThemeT
           </div>
           <ul
             tabindex="0"
-            class="bg-base-00 menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-lg bg-jgsblue-600 p-2 text-slate-700 shadow-lg ring-1 ring-slate-500/30 dark:bg-jgsblue-800"
+            class="bg-theme-600/90 dark:bg-theme-600/90 menu dropdown-content menu-sm z-[1000] mt-3 w-52 rounded-lg p-2 text-slate-700 shadow-lg ring-1 ring-slate-500/30"
           >
-            <li><a class="m-1 p-4 text-white/80 hover:bg-jgsblue-500" href="/">Home</a></li>
             <li>
-              <a class="m-1 p-4 text-white/80 hover:bg-jgsblue-500" href="/contact">Contact</a>
+              <a class="hover:bg-theme-500 m-1 p-4 font-semibold text-white/80" href="/">Home</a>
+            </li>
+            <li>
+              <a class="hover:bg-theme-500 m-1 p-4 text-white/80" href="/contact"> Contact </a>
             </li>
           </ul>
         </div>
         <a href="/">
-          <h1 class="whitespace-nowrap text-xl">jgs-technical</h1>
+          <h1 class="dark:text-theme-100/80 whitespace-nowrap text-xl text-white">jgs-technical</h1>
         </a>
       </div>
       <div class="navbar-start ml-8 hidden sm:flex sm:flex-grow">
-        <ul class="menu menu-horizontal px-1">
-          <li>
-            <a href="/" class={`${Astro.url.pathname?.length > 2 ? '' : ''}`}>Home</a>
-          </li>
-          <li>
-            <a
-              href="/contact"
-              class={`${Astro.url.pathname.startsWith('/contact') ? 'font-bold' : ''}`}>Contact</a
-            >
-          </li>
+        <ul class="menu menu-horizontal z-[1000] flex-nowrap px-1">
+          <NavBarItem client:load title="Home" href="/" isActive={Astro.url.pathname?.length < 2} />
+          <NavBarItem
+            client:load
+            title="Contact"
+            isActive={Astro.url.pathname?.includes('/contact')}
+            href="/contact"
+          />
         </ul>
       </div>
-      <div class="navbar-end relative flex flex-grow">
+      <div class="sm:width-auto relative flex flex-grow justify-end">
         <ThemeToggle client:only="react" />
       </div>
     </div>
   </div>
 </div>
-{
-  /*
-<div class="bg-jgsblue-200 dark:bg-jgsblue-800">
-  <div class="container mx-auto">
-    <div class="ml-4 mt-1 flex flex-grow items-center align-middle">
-      <h1 class="pr-4 text-xl text-white dark:text-gray-900">jgs-technical</h1>
-      <div class="flex-grow justify-start">
-        <div
-          class={`btn btn-link no-animation no-underline hover:no-underline ${Astro.url.pathname?.length > 2 ? 'hover:text-accent' : 'font-bold brightness-150'}`}
-        >
-          <a href="/">Home</a>
-        </div>
-        <div
-          class={`btn btn-link no-animation no-underline hover:no-underline ${!Astro.url.pathname.startsWith('/contact') ? 'hover:text-accent' : 'font-bold brightness-150'}`}
-        >
-          <a href="/contact">Contact</a>
-        </div>
-        <div
-          class={`btn btn-link no-animation no-underline dark:text-amber-400 hover:no-underline ${Astro.url.pathname.startsWith('/blog') ? 'hover:text-accent' : ''}`}
-        >
-          Test
-        </div>
-      </div>
-      <div class="align-end">
-        <ThemeToggle client:only="react" />
-      </div>
-    </div>
-  </div>
-</div>
-*/
-}

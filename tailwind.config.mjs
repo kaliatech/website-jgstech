@@ -20,9 +20,9 @@ export default {
       },
 
       colors: {
-        primaryt: '#233443',
-        primarytdark: '#233443',
-        jgsblue: {
+        theme: {
+          off_black: 'rgb(14,14,17)',
+          off_white: '#fff6eb',
           50: '#E7EDF3',
           100: '#CCD9E5',
           200: '#9AB3CB',
