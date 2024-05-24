@@ -1,7 +1,7 @@
 ---
-import { ThemeToggle } from '@kaliatech/shared-astro-tw/components-client/ThemeToggle/ThemeToggle.jsx'
+import { ThemeToggle } from '@kaliatech/shared-astro-tw/components-client/ThemeToggle/ThemeToggle.tsx'
 
-import NavBarItem from '@kaliatech/shared-astro-tw/components/navbar/NavBarItem'
+import NavBarItem from '@kaliatech/shared-astro-tw/components/navbar/NavBarItem.tsx'
 //console.log('Astro.url', Astro.url)
 ---
 
@@ -10,7 +10,7 @@ import NavBarItem from '@kaliatech/shared-astro-tw/components/navbar/NavBarItem'
   class="text-theme-offwhite from-theme-400 to-theme-700 dark:bg-theme-900 dark:text-theme-100 bg-gradient-to-bl"
 >
 -->
-<div class="bg-theme-600 dark:bg-theme-800 text-base-content">
+<div class="bg-theme-600 text-base-content dark:bg-theme-800">
   <div class="container mx-auto">
     <div class="navbar z-[1000]">
       <div class="navbar-start w-fit">
@@ -31,18 +31,18 @@ import NavBarItem from '@kaliatech/shared-astro-tw/components/navbar/NavBarItem'
           </div>
           <ul
             tabindex="0"
-            class="bg-theme-600/90 dark:bg-theme-600/90 menu dropdown-content menu-sm z-[1000] mt-3 w-52 rounded-lg p-2 text-slate-700 shadow-lg ring-1 ring-slate-500/30"
+            class="menu dropdown-content menu-sm z-[1000] mt-3 w-52 rounded-lg bg-theme-600/90 p-2 text-slate-700 shadow-lg ring-1 ring-slate-500/30 dark:bg-theme-600/90"
           >
             <li>
-              <a class="hover:bg-theme-500 m-1 p-4 font-semibold text-white/80" href="/">Home</a>
+              <a class="m-1 p-4 font-semibold text-white/80 hover:bg-theme-500" href="/">Home</a>
             </li>
             <li>
-              <a class="hover:bg-theme-500 m-1 p-4 text-white/80" href="/contact"> Contact </a>
+              <a class="m-1 p-4 text-white/80 hover:bg-theme-500" href="/contact"> Contact </a>
             </li>
           </ul>
         </div>
         <a href="/">
-          <h1 class="dark:text-theme-100/80 whitespace-nowrap text-xl text-white">jgs-technical</h1>
+          <h1 class="whitespace-nowrap text-xl text-white dark:text-theme-100/80">jgs-technical</h1>
         </a>
       </div>
       <div class="navbar-start ml-8 hidden sm:flex sm:flex-grow">
