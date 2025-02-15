@@ -61,7 +61,8 @@ const bgImgUrl = bgMain3bStyleSrc
   <style define:vars={{ bgImgUrl: `url("${bgImgUrl}")` }}>
     .bg1 {
       background-color: #456787; /* theme[400] */
-      background-image: linear-gradient(
+      background-image:
+        linear-gradient(
           to bottom,
           rgba(0, 0, 0, 0),
           rgba(220, 220, 220, 0.5),
@@ -72,12 +73,8 @@ const bgImgUrl = bgMain3bStyleSrc
 
     :global(.dark) .bg1 {
       background-color: #456787; /* theme[400] */
-      background-image: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0),
-          rgba(38, 38, 38, 0.5),
-          rgba(38, 38, 38, 0.75)
-        ),
+      background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(38, 38, 38, 0.5), rgba(38, 38, 38, 0.75)),
         var(--bgImgUrl);
     }
   </style>
